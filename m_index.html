@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-MZ2FKFG');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117323383-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-117323383-1');
+    </script>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width">
+    <title>Feliix Inc.</title>
+
+
+
+
+    <style>
+
+        @font-face {
+            font-family: MPLUS1c-Bold;
+            src: url(font/MPLUS1c-Bold.ttf);
+        }
+
+        @font-face {
+            font-family: MPLUS1c-Regular;
+            src: url(font/MPLUS1c-Regular.ttf);
+        }
+
+        * {
+            color: #ffffff;
+            font-family: MPLUS1c-Regular;
+        }
+
+        body{
+            margin: 0;
+        }
+
+        .container {
+            width: 100vw;
+            height: 200vw;
+            background-color: black;
+            background-image: url("images/mobile/Feliix-BG.png");
+            background-size: cover;
+            padding: 0 0 6.25vw;
+            position: relative;
+        }
+
+        .header {
+            padding-top: 6.25vw;
+            margin-bottom: 11.25vw;
+        }
+
+        .headerbox {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            padding: 0 6.25vw;
+        }
+
+        .headerbox.nav {
+            border-bottom: 1px solid #424245;
+            padding-bottom: 5vw;
+        }
+
+        .headerbox .menu {
+            display: flex;
+            align-items: center;
+            padding-bottom: 0.75vw;
+        }
+
+        .headerbox .menu span {
+            color: #FFFFFF;
+            margin-right: 3.75vw;
+            cursor: pointer;
+        }
+
+        .headerbox .menu span.close_menu {
+            margin-right: 4.5vw;
+        }
+
+        .headerbox .menu a {
+            height: 5.875vw;
+        }
+
+        .headerbox .logo {
+            width: 25vw;
+        }
+
+        .headerbox .service_scope {
+            text-align: right;
+            font-size: 0.59375rem;
+        }
+
+        nav {
+            background-color: #000000;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: -110%;
+            padding-top: 6.25vw;
+            z-index: 99999;
+            transition: .2s;
+            box-sizing: border-box;
+        }
+
+        nav .middle {
+            padding: 0 6.25vw;
+        }
+
+        nav .middle ul {
+            list-style-type: none;
+            padding-inline-start: 0;
+            margin-block-start: 0;
+        }
+
+        nav .middle ul li {
+            line-height: 10vw;
+            border-bottom: 0.25vw solid #424245;
+            padding-left: 0.75vw;
+        }
+
+        nav .middle ul li:last-of-type {
+            border-bottom: none;
+        }
+
+        nav .middle ul li a {
+            display: inline-block;
+            text-decoration: none;
+            font-size: 0.875rem;
+            font-weight: 400;
+            color: #f5f5f7;
+            opacity: 0.8;
+        }
+
+        nav .middle ul li a:hover {
+            opacity: 1;
+        }
+
+        .body {
+            margin: 0 6.25vw;
+        }
+
+        .body .project {
+            margin-bottom: 3.75vw;
+        }
+
+        .body .project a {
+            text-decoration: none;
+        }
+
+        .body .project .title {
+            margin-bottom: 0.5vw;
+            font-size: 1.56rem;
+            height: 9.25vw;
+        }
+
+        .body .project .title.small {
+            font-size: 1.33rem;
+        }
+
+        .body .project .title a{
+            font-family: MPLUS1c-Bold;
+        }
+
+        .body .project .description {
+            margin-left: 5vw;
+            font-size: 0.9375rem;
+            position: relative;
+            width: 82.5vw;
+            height: 16.5vw;
+        }
+
+        .body .project .description a {
+            color: #ffffff;
+        }
+
+        .body .project .description::before {
+            content: "";
+            display: block;
+            width: 0.875rem;
+            height: 0.25vw;
+            position: absolute;
+            top: 2.75vw;
+            left: -4.5vw;
+            background-color: #ffffff;
+        }
+
+        .body .img_box_1, .body .img_box_2 {
+            width: 87.5vw;
+            height: 53.75vw;
+        }
+
+        .body .img_box_1 img, .body .img_box_2 img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .body .margin_between_images {
+            width: 100%;
+            height: 6.25vw;
+            position: relative;
+        }
+
+        .body .margin_between_images > a {
+            cursor: pointer;
+        }
+
+        .body .margin_between_images > a.prev {
+            position: absolute;
+            top: 0;
+            left: -3.75vw;
+            color: #696969;
+        }
+
+        .body .margin_between_images > a.next {
+            position: absolute;
+            top: 0;
+            right: -3.75vw;
+            color: #696969;
+        }
+
+        .body .margin_between_images > a.prev:hover, .body .margin_between_images > a.next:hover {
+            color: #ffffff;
+        }
+
+        .body ul {
+            list-style-type: none;
+            display: flex;
+            padding-inline-start: 0;
+        }
+
+        .body ul:nth-of-type(2) {
+            height: 10.5vw;
+            margin-bottom: 0;
+        }
+
+        .body ul li:nth-of-type(1) {
+            width: 36%;
+            padding-right: 4%;
+        }
+
+        .body ul li:nth-of-type(2) {
+            width: 60%;
+        }
+
+        .body .design_location {
+            margin: 6.25vw 0 0;
+        }
+
+        .body .design_location li {
+            font-size: 0.59375rem;
+            color: #969696;
+        }
+
+        .body .design_location_values {
+            margin-top: 0;
+        }
+
+        .body .design_location_values li {
+            font-size: 0.71875rem;
+        }
+
+        .body .divider {
+            width: 100%;
+            height: 0.375vw;
+        }
+
+        div.body:nth-of-type(2) .divider {
+            background-image: linear-gradient(90deg, #909090 0, #909090 12.5%, #fff 12.5%);
+        }
+
+        div.body:nth-of-type(3) .divider {
+            background-image: linear-gradient(90deg, #fff 0, #fff 12.5%, #909090 12.5%, #909090 25%, #fff 25%);
+        }
+
+        div.body:nth-of-type(4) .divider {
+            background-image: linear-gradient(90deg, #fff 0, #fff 25%, #909090 25%, #909090 37.5%, #fff 37.5%);
+        }
+
+        div.body:nth-of-type(5) .divider {
+            background-image: linear-gradient(90deg, #fff 0, #fff 37.5%, #909090 37.5%, #909090 50%, #fff 50%);
+        }
+
+        div.body:nth-of-type(6) .divider {
+            background-image: linear-gradient(90deg, #fff 0, #fff 50%, #909090 50%, #909090 62.5%, #fff 62.5%);
+        }
+
+        div.body:nth-of-type(7) .divider {
+            background-image: linear-gradient(90deg, #fff 0, #fff 62.5%, #909090 62.5%, #909090 75%, #fff 75%);
+        }
+
+        div.body:nth-of-type(8) .divider {
+            background-image: linear-gradient(90deg, #fff 0, #fff 75%, #909090 75%, #909090 87.5%, #fff 87.5%);
+        }
+
+        div.body:nth-of-type(9) .divider {
+            background-image: linear-gradient(90deg, #fff 0, #fff 87.5%, #909090 87.5%);
+        }
+
+        .footer {
+            margin: 5vw 6.25vw 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .footer > div{
+            display: flex;
+            align-items: center;
+        }
+
+        .footer > div > span{
+            font-size: 0.875rem;
+            color: #969696;
+        }
+
+        .footer > div > a{
+            height: 0.875rem;
+            margin: 0 1vw;
+        }
+
+        .footer > div > a:nth-of-type(1) > img{
+            height: 100%;
+            vertical-align: 0.75vw;
+        }
+
+        .footer > div > a:nth-of-type(2) > img{
+            height: 100%;
+            vertical-align: 0.5vw;
+        }
+
+        .fade {
+            animation-name: fade;
+            animation-duration: 2s;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+
+        @media only screen and (max-width: 374px) {
+
+            .body .project .title {
+                font-size: 1.4375rem;
+            }
+
+            .body .project .title.small {
+                font-size: 1.25rem;
+            }
+
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MZ2FKFG"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="container">
+
+    <div class="header">
+
+        <div class="headerbox">
+            <div class="menu">
+                <span class="open_menu" onclick="document.getElementsByTagName('nav')[0].style.left='0'">☰</span>
+                <a href=""><img class="logo" src="images\mobile\Feliix-Logo.png"></a>
+            </div>
+
+            <div class="service_scope">
+                A Trustworthy Lighting &<br>
+                SystemsFurniture Solution Provider
+            </div>
+        </div>
+    </div>
+
+    <nav>
+        <div class="headerbox nav">
+            <div class="menu">
+                <span class="close_menu" onclick="document.getElementsByTagName('nav')[0].style.left='-110%'">Χ</span>
+                <a href=""><img class="logo" src="images\mobile\Feliix-Logo.png"></a>
+            </div>
+
+            <div class="service_scope">
+                A Trustworthy Lighting &<br>
+                SystemsFurniture Solution Provider
+            </div>
+        </div>
+
+        <div class="middle">
+            <ul>
+                <li><a href="https://www.feliix.com/feliix-about-us">About us</a></li>
+                <li><a href="https://www.feliix.com/feliix-lighting">Lighting</a></li>
+                <li><a href="https://www.feliix.com/feliix-systemsfurniture">SystemsFurniture</a></li>
+                <li><a href="https://www.feliix.com/feliix-projects">Projects</a></li>
+                <li><a href="https://www.feliix.com/feliix-flagship-store">Flagship Store</a></li>
+                <li><a href="https://www.feliix.com/feliix-contact-us">Contact us</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+
+    <div class="body fade" onmouseover="clearTimeout(timeout_id)" onmouseout="showSlides(slideIndex)">
+        <div class="project">
+            <div class="title"><a>Smart Experience Center</a></div>
+            <div class="description"><a>Lighting solution in creating a unique visual experience</a>
+            </div>
+        </div>
+
+        <div class="img_box_1">
+            <img src="images/mobile/Smart 1.jpg">
+        </div>
+
+        <div class="margin_between_images">
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <div class="img_box_2">
+            <img src="images/mobile/Smart 2.jpg">
+        </div>
+
+        <ul class="design_location">
+            <li>Designer:</li>
+            <li>Location:</li>
+        </ul>
+
+        <ul class="design_location_values">
+            <li>DVD Architecture</li>
+            <li>Makati City</li>
+        </ul>
+
+        <div class="divider"></div>
+
+    </div>
+
+    <div class="body fade" onmouseover="clearTimeout(timeout_id)" onmouseout="showSlides(slideIndex)">
+        <div class="project">
+            <div class="title"><a href="https://www.feliix.com/feliix-globe-project">The Globe Tower</a></div>
+            <div class="description"><a href="https://www.feliix.com/feliix-globe-project">Lighting solution in creating a refreshed and playful workspace</a>
+            </div>
+        </div>
+
+        <div class="img_box_1">
+            <img src="images/mobile/Globe 1.jpg">
+        </div>
+
+        <div class="margin_between_images">
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <div class="img_box_2">
+            <img src="images/mobile/Globe 2.jpg">
+        </div>
+
+        <ul class="design_location">
+            <li>Designer:</li>
+            <li>Location:</li>
+        </ul>
+
+        <ul class="design_location_values">
+            <li>Aidea</li>
+            <li>Bonifacio Global City</li>
+        </ul>
+
+        <div class="divider"></div>
+
+    </div>
+
+    <div class="body fade" onmouseover="clearTimeout(timeout_id)" onmouseout="showSlides(slideIndex)">
+        <div class="project">
+            <div class="title"><a href="https://www.feliix.com/feliix-bpi-project">BPI Ayala Triangle Gardens</a></div>
+            <div class="description"><a href="https://www.feliix.com/feliix-bpi-project">Lighting solution in creating a serene ambience for a trusted banking institution</a>
+            </div>
+        </div>
+
+        <div class="img_box_1">
+            <img src="images/mobile/BPI 1.jpg">
+        </div>
+
+        <div class="margin_between_images">
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <div class="img_box_2">
+            <img src="images/mobile/BPI 2.jpg">
+        </div>
+
+        <ul class="design_location">
+            <li>Designer:</li>
+            <li>Location:</li>
+        </ul>
+
+        <ul class="design_location_values">
+            <li>Aidea</li>
+            <li>Ayala Triangle Gardens, Makati City</li>
+        </ul>
+
+        <div class="divider"></div>
+
+    </div>
+
+    <div class="body fade" onmouseover="clearTimeout(timeout_id)" onmouseout="showSlides(slideIndex)">
+        <div class="project">
+            <div class="title"><a>SM Store Estancia</a></div>
+            <div class="description"><a>Lighting solution in creating imaginative decors for an upscale department store</a>
+            </div>
+        </div>
+
+        <div class="img_box_1">
+            <img src="images/mobile/SM Estancia 1.jpg">
+        </div>
+
+        <div class="margin_between_images">
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <div class="img_box_2">
+            <img src="images/mobile/SM Estancia 2.jpg">
+        </div>
+
+        <ul class="design_location">
+            <li>Designer:</li>
+            <li>Location:</li>
+        </ul>
+
+        <ul class="design_location_values">
+            <li>Point Design</li>
+            <li>Capitol Commons, Pasig City</li>
+        </ul>
+
+        <div class="divider"></div>
+
+    </div>
+
+    <div class="body fade" onmouseover="clearTimeout(timeout_id)" onmouseout="showSlides(slideIndex)">
+        <div class="project">
+            <div class="title"><a href="https://www.feliix.com/feliix-celebrity-fitness-project">Celebrity Fitness</a>
+            </div>
+            <div class="description"><a href="https://www.feliix.com/feliix-celebrity-fitness-project">Lighting solution in creating an energetic and dynamic fitness center</a>
+            </div>
+        </div>
+
+        <div class="img_box_1">
+            <img src="images/mobile/Celebrity Fitness 1.jpg">
+        </div>
+
+        <div class="margin_between_images">
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <div class="img_box_2">
+            <img src="images/mobile/Celebrity Fitness 2.jpg">
+        </div>
+
+        <ul class="design_location">
+            <li>Designer:</li>
+            <li>Location:</li>
+        </ul>
+
+        <ul class="design_location_values">
+            <li>Group 3 Design Studio</li>
+            <li>Ayala North Exchange, Makati City</li>
+        </ul>
+
+        <div class="divider"></div>
+
+    </div>
+
+    <div class="body fade" onmouseover="clearTimeout(timeout_id)" onmouseout="showSlides(slideIndex)">
+        <div class="project">
+            <div class="title small"><a>Saint Joseph the Worker Parish</a></div>
+            <div class="description"><a>Lighting solution in creating an awe-inspiring house of God</a>
+            </div>
+        </div>
+
+        <div class="img_box_1">
+            <img src="images/mobile/SJWP 1.jpg">
+        </div>
+
+        <div class="margin_between_images">
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <div class="img_box_2">
+            <img src="images/mobile/SJWP 2.jpg">
+        </div>
+
+        <ul class="design_location">
+            <li>Designer:</li>
+            <li>Location:</li>
+        </ul>
+
+        <ul class="design_location_values">
+            <li>Feliix Inc.</li>
+            <li>Cainta, Rizal</li>
+        </ul>
+
+        <div class="divider"></div>
+
+    </div>
+
+    <div class="body fade" onmouseover="clearTimeout(timeout_id)" onmouseout="showSlides(slideIndex)">
+        <div class="project">
+            <div class="title"><a href="https://www.feliix.com/feliix-silverdab">Silverdab</a></div>
+            <div class="description"><a href="https://www.feliix.com/feliix-silverdab">Office systems furniture solution in creating an industrial-inspired chic office space</a>
+            </div>
+        </div>
+
+        <div class="img_box_1">
+            <img src="images/mobile/Silverdab 1.jpg">
+        </div>
+
+        <div class="margin_between_images">
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <div class="img_box_2">
+            <img src="images/mobile/Silverdab 2.jpg">
+        </div>
+
+        <ul class="design_location">
+            <li>Designer:</li>
+            <li>Location:</li>
+        </ul>
+
+        <ul class="design_location_values">
+            <li>Ar. Joel Afable</li>
+            <li>Quezon City</li>
+        </ul>
+
+        <div class="divider"></div>
+
+    </div>
+
+    <div class="body fade" onmouseover="clearTimeout(timeout_id)" onmouseout="showSlides(slideIndex)">
+        <div class="project">
+            <div class="title"><a href="https://www.feliix.com/feliix-flagship-store">Feliix Flagship Store</a></div>
+            <div class="description"><a href="https://www.feliix.com/feliix-flagship-store">A meeting point of ideas, characters, memories, and harmony</a>
+            </div>
+        </div>
+
+        <div class="img_box_1">
+            <img src="images/mobile/Flagship Store 1.jpg">
+        </div>
+
+        <div class="margin_between_images">
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <div class="img_box_2">
+            <img src="images/mobile/Flagship Store 2.jpg">
+        </div>
+
+        <ul class="design_location">
+            <li></li>
+            <li>Location:</li>
+        </ul>
+
+        <ul class="design_location_values">
+            <li></li>
+            <li>Shangri-La The Fort, Bonifacio Global City</li>
+        </ul>
+
+        <div class="divider"></div>
+
+    </div>
+
+    <div class="footer" style="margin-top: 6.25vw; padding-right: 5vw;">
+
+        <div>
+            <a href="https://www.facebook.com/FeliixProject/" target="_blank"><img src="images/mobile/facebook.svg"></a>
+            <a href="https://www.instagram.com/feliixproject/?hl=en" target="_blank"><img src="images/mobile/instagram.svg"></a>
+        </div>
+
+    </div>
+
+</div>
+</body>
+
+<script>
+    let slideIndex = -1;
+    let timeout_id = null;
+
+    autoshowSlides();
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    //Manual Slide
+    function showSlides(n) {
+        clearTimeout(timeout_id);
+
+        let i;
+        let slides = document.getElementsByClassName("body");
+
+        if (n > slides.length - 1) {
+            slideIndex = 0
+        }
+        if (n < 0) {
+            slideIndex = slides.length - 1
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+
+        slides[slideIndex].style.display = "block";
+        timeout_id = setTimeout(autoshowSlides, 5000);
+    }
+
+    //Auto Slide
+    function autoshowSlides() {
+        slideIndex++;
+
+        let i;
+        let slides = document.getElementsByClassName("body");
+
+        if (slideIndex > slides.length - 1) {
+            slideIndex = 0
+        }
+
+        if (slideIndex < 0) {
+            slideIndex = slides.length - 1
+        }
+
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+
+        slides[slideIndex].style.display = "block";
+        timeout_id = setTimeout(autoshowSlides, 5000);
+    }
+</script>
+</html>
