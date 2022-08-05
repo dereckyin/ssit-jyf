@@ -127,10 +127,11 @@ var app = new Vue({
     },
 
     getUUID: function() {
-      //var uuid = new DeviceUUID().get();
-      //if(uuid != '28218b4c-5657-4cd0-bb65-528169d7922e')
-      // window.location = "index.html";
-      //else
+      var uuid = new DeviceUUID().get();
+      if(uuid != '28218b4c-5657-4cd0-bb65-528169d7922e' && uuid != 'd520c7a8-421b-4563-b955-f5abc56b97ec'){
+       window.location = "index.html";
+      }
+      else
         this.verified = true;
     },
 
@@ -270,7 +271,7 @@ var app = new Vue({
               if(check_cnt >= 2) 
               {
                 Swal.fire({
-                  text: 'For one single date and one type, User only can punch up to 2 times for one type and one date',
+                  text: 'For one single date and one type, user only can punch up to 2 times',
                   icon: 'error',
                   confirmButtonText: 'OK'
                 })
